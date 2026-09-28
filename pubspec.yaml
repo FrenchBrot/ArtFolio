@@ -1,0 +1,47 @@
+name: artfolio
+description: "ArtFolio, a personal art portfolio app for showing illustration work to potential clients."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Home page: Pinterest-style staggered grid, and image caching so tiles
+  # don't refetch or jump while scrolling
+  flutter_staggered_grid_view: ^0.7.0
+  cached_network_image: ^3.4.1
+
+  # Backend (open source): Postgres tables, admin Auth, image Storage
+  supabase_flutter: ^2.8.0
+
+  # Loads the Supabase URL and anon key from the git-ignored .env file
+  flutter_dotenv: ^5.2.1
+
+  # Artist Contact page: opens Instagram, Ko-fi, Cara and email links
+  url_launcher: ^6.3.1
+
+  # Theme font (Inter), fetched at runtime
+  google_fonts: ^6.2.1
+
+  # Keeps the device_preview wrapper from the proposal
+  device_preview: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Every folder must exist and is NOT recursive: list each subfolder on its own line.
+  assets:
+    - .env                    # Supabase URL + anon key (real file is git-ignored)
+    - assets/images/          # app images, e.g. logo and artist placeholder
+    - assets/images/samples/  # bundled fallback artwork if Supabase is unreachable
+    - assets/icons/           # custom icons, if any (Material Icons need no entry)
