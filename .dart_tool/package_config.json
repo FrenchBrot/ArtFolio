@@ -249,7 +249,7 @@
     },
     {
       "name": "jni",
-      "rootUri": "file:///C:/Users/Yasha%20Gregor/AppData/Local/Pub/Cache/hosted/pub.dev/jni-1.0.3",
+      "rootUri": "file:///C:/Users/Yasha%20Gregor/AppData/Local/Pub/Cache/hosted/pub.dev/jni-1.1.0",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -339,7 +339,7 @@
     },
     {
       "name": "octo_image",
-      "rootUri": "file:///C:/Users/Yasha%20Gregor/AppData/Local/Pub/Cache/hosted/pub.dev/octo_image-2.1.1",
+      "rootUri": "file:///C:/Users/Yasha%20Gregor/AppData/Local/Pub/Cache/hosted/pub.dev/octo_image-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -543,7 +543,7 @@
     },
     {
       "name": "storage_client",
-      "rootUri": "file:///C:/Users/Yasha%20Gregor/AppData/Local/Pub/Cache/hosted/pub.dev/storage_client-2.8.0",
+      "rootUri": "file:///C:/Users/Yasha%20Gregor/AppData/Local/Pub/Cache/hosted/pub.dev/storage_client-2.8.1",
       "packageUri": "lib/",
       "languageVersion": "3.9"
     },
@@ -561,7 +561,7 @@
     },
     {
       "name": "supabase",
-      "rootUri": "file:///C:/Users/Yasha%20Gregor/AppData/Local/Pub/Cache/hosted/pub.dev/supabase-2.16.1",
+      "rootUri": "file:///C:/Users/Yasha%20Gregor/AppData/Local/Pub/Cache/hosted/pub.dev/supabase-2.16.2",
       "packageUri": "lib/",
       "languageVersion": "3.9"
     },
@@ -573,7 +573,7 @@
     },
     {
       "name": "supabase_flutter",
-      "rootUri": "file:///C:/Users/Yasha%20Gregor/AppData/Local/Pub/Cache/hosted/pub.dev/supabase_flutter-2.17.2",
+      "rootUri": "file:///C:/Users/Yasha%20Gregor/AppData/Local/Pub/Cache/hosted/pub.dev/supabase_flutter-2.18.0",
       "packageUri": "lib/",
       "languageVersion": "3.9"
     },
@@ -603,9 +603,9 @@
     },
     {
       "name": "url_launcher",
-      "rootUri": "file:///C:/Users/Yasha%20Gregor/AppData/Local/Pub/Cache/hosted/pub.dev/url_launcher-6.3.2",
+      "rootUri": "file:///C:/Users/Yasha%20Gregor/AppData/Local/Pub/Cache/hosted/pub.dev/url_launcher-6.3.3",
       "packageUri": "lib/",
-      "languageVersion": "3.6"
+      "languageVersion": "3.11"
     },
     {
       "name": "url_launcher_android",
