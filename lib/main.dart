@@ -20,20 +20,20 @@ Future<void> main() async {
   await dotenv.load(fileName: '.env');
 
   final supabaseUrl = dotenv.env['SUPABASE_URL'];
-  final supabaseAnonKey = dotenv.env['SUPABASE_ANON_KEY'];
+  final supabasePublishableKey = dotenv.env['SUPABASE_PUBLISHABLE_KEY'];
 
   if (supabaseUrl == null || supabaseUrl.isEmpty ||
-      supabaseAnonKey == null || supabaseAnonKey.isEmpty) {
+      supabasePublishableKey == null || supabasePublishableKey.isEmpty) {
     throw StateError(
-      'Missing SUPABASE_URL / SUPABASE_ANON_KEY. Copy .env.example to '
-      '.env and fill in your Supabase project\'s values, and make sure '
+      'Missing SUPABASE_URL / SUPABASE_PUBLISHABLE_KEY. Copy .env.example '
+      'to .env and fill in your Supabase project\'s values, and make sure '
       '.env is listed under pubspec.yaml -> flutter -> assets.',
     );
   }
 
   await Supabase.initialize(
     url: supabaseUrl,
-    anonKey: supabaseAnonKey,
+    publishableKey: supabasePublishableKey,
   );
   supabase = Supabase.instance.client;
 

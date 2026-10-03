@@ -17,9 +17,11 @@ dependencies:
   cached_network_image: ^3.4.1
 
   # Backend (open source): Postgres tables, admin Auth, image Storage
-  supabase_flutter: ^2.8.0
+  # ^2.12.0, not ^2.8.0 — the Supabase.initialize(publishableKey: ...)
+  # parameter only exists from here on; older versions only accept anonKey.
+  supabase_flutter: ^2.12.0
 
-  # Loads the Supabase URL and anon key from the git-ignored .env file
+  # Loads the Supabase URL and publishable key from the git-ignored .env file
   flutter_dotenv: ^5.2.1
 
   # Artist Contact page: opens Instagram, Ko-fi, Cara and email links
@@ -41,7 +43,7 @@ flutter:
 
   # Every folder must exist and is NOT recursive: list each subfolder on its own line.
   assets:
-    - .env                    # Supabase URL + anon key (real file is git-ignored)
+    - .env                    # Supabase URL + publishable key (real file is git-ignored)
     - assets/images/          # app images, e.g. logo and artist placeholder
     - assets/images/samples/  # bundled fallback artwork if Supabase is unreachable
     - assets/icons/           # custom icons, if any (Material Icons need no entry)
