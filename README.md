@@ -131,16 +131,11 @@ The design system used for every screen (palette, type scale, spacing and compon
 
 | Screen                               | Screenshot              |
 | ------------------------------------ | ----------------------- |
-| Home (masonry grid + category chips) | <img width="440" height="923" alt="home" src="https://github.com/user-attachments/assets/398bddfe-474f-406a-80fe-71650b10d779" />
-           |
-| Home filtered by a category          | <img width="440" height="923" alt="home" src="https://github.com/user-attachments/assets/042a4f27-12d0-4113-b1f5-b74ae8eb8cc7" />
-           |
-| Artwork detail                       | <img width="443" height="920" alt="artwork_detail" src="https://github.com/user-attachments/assets/5e9ddaa8-c1a0-4d9e-a3ae-0c209b3d6bbe" />
- |
-| Search results                       | <img width="443" height="923" alt="search" src="https://github.com/user-attachments/assets/a3c26d48-a0b4-4fe0-9429-194834b11253" />
-         |
-| Profile (bio + contact + work)       | <img width="442" height="927" alt="profile" src="https://github.com/user-attachments/assets/9acc1d0a-f5be-4cde-9f54-724948882cd1" />
-        |
+| Home (masonry grid + category chips) | <img width="440" height="923" alt="home" src="https://github.com/user-attachments/assets/398bddfe-474f-406a-80fe-71650b10d779" /> |
+| Home filtered by a category          | <img width="440" height="923" alt="home" src="https://github.com/user-attachments/assets/042a4f27-12d0-4113-b1f5-b74ae8eb8cc7" /> |
+| Artwork detail                       | <img width="443" height="920" alt="artwork_detail" src="https://github.com/user-attachments/assets/5e9ddaa8-c1a0-4d9e-a3ae-0c209b3d6bbe" /> |
+| Search results                       | <img width="443" height="923" alt="search" src="https://github.com/user-attachments/assets/a3c26d48-a0b4-4fe0-9429-194834b11253" /> |
+| Profile (bio + contact + work)       | <img width="442" height="927" alt="profile" src="https://github.com/user-attachments/assets/9acc1d0a-f5be-4cde-9f54-724948882cd1" /> |
 
 ## 7. Known issues and next steps
 
