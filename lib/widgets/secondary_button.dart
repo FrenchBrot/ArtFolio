@@ -1,10 +1,6 @@
 // lib/widgets/secondary_button.dart
 import 'package:flutter/material.dart';
 
-/// Outlined action button. Styling comes from [OutlinedButtonThemeData]
-/// in lib/theme/app_theme.dart.
-///
-/// Params (design system v2): label, onPressed.
 class SecondaryButton extends StatelessWidget {
   const SecondaryButton({
     super.key,

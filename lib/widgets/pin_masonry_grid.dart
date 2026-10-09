@@ -6,18 +6,7 @@ import '../models/pin.dart';
 import '../theme/app_spacing.dart';
 import 'pin_card.dart';
 
-/// Two-column masonry layout of [PinCard]s (Pinterest mobile style).
-///
-/// Takes data and callbacks only, no state:
-///  - [pins]      what to show
-///  - [onPinTap]  called with the tapped pin
-///  - [onSaveTap] optional; called with the pin whose save button was tapped
-///
-/// Spacing follows the design system: 8px gutters between tiles
-/// ([AppSpacing.sm]) and 16px screen-edge padding ([AppSpacing.md]).
-///
-/// Do not wrap the cards in fixed-height boxes. Each card sizes itself
-/// from its image, and that is what produces the staggered look.
+
 class PinMasonryGrid extends StatelessWidget {
   const PinMasonryGrid({
     super.key,
@@ -34,14 +23,13 @@ class PinMasonryGrid extends StatelessWidget {
   final ValueChanged<Pin> onPinTap;
   final ValueChanged<Pin>? onSaveTap;
 
-  /// Defaults to 16px on every side. Override per screen if needed.
+ 
   final EdgeInsetsGeometry padding;
 
-  /// Pass a controller if the parent needs the scroll position.
+ 
   final ScrollController? controller;
 
-  /// Set to `NeverScrollableScrollPhysics()` together with
-  /// `shrinkWrap: true` when the grid sits inside another scroll view.
+
   final ScrollPhysics? physics;
   final bool shrinkWrap;
 

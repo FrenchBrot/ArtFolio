@@ -5,11 +5,6 @@ import '../theme/app_spacing.dart';
 import '../theme/app_theme.dart';
 import 'primary_button.dart';
 
-/// Centered icon + message + optional action, shown when a list has
-/// nothing in it yet (an empty board, no search results, a brand new
-/// account).
-///
-/// Params (design system v2): message, icon, actionLabel, onActionTap.
 class EmptyState extends StatelessWidget {
   const EmptyState({
     super.key,

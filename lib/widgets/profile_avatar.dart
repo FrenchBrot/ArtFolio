@@ -4,10 +4,6 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
 
-/// Circular profile photo, used for the artist and (if added later) any
-/// other user photo.
-///
-/// Params (design system v2): imageUrl, radius.
 class ProfileAvatar extends StatelessWidget {
   const ProfileAvatar({
     super.key,

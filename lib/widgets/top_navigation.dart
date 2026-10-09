@@ -1,18 +1,11 @@
 // lib/widgets/top_navigation.dart
-//
-// NOTE: the design system v2 doc names this file
-// lib/widgets/top_navigation_bar.dart. Built here as top_navigation.dart
-// per request — rename one side to match before grading.
+
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
 import 'profile_avatar.dart';
 
-/// Header for Home / Search / Notifications / Profile: a tappable search
-/// field and the profile avatar. Implements PreferredSizeWidget so it can
-/// be passed straight to Scaffold.appBar.
-///
-/// Params (design system v2): onSearchTap, onProfileTap, avatarUrl.
+
 class TopNavigationBar extends StatelessWidget implements PreferredSizeWidget {
   const TopNavigationBar({
     super.key,

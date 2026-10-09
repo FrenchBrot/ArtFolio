@@ -8,9 +8,6 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'screens/app_shell.dart';
 import 'theme/app_theme.dart';
 
-/// Convenience accessor so other files can do
-/// `import 'package:artfolio/main.dart' show supabase;`
-/// instead of calling `Supabase.instance.client` everywhere.
 late final SupabaseClient supabase;
 
 Future<void> main() async {
@@ -52,10 +49,10 @@ class ArtFolioApp extends StatelessWidget {
     return MaterialApp(
       title: 'ArtFolio',
       debugShowCheckedModeBanner: false,
-      theme: appTheme, // light only — see design system v2, Step A
-      useInheritedMediaQuery: true, // required by device_preview
-      locale: DevicePreview.locale(context), // required by device_preview
-      builder: DevicePreview.appBuilder, // required by device_preview
+      theme: appTheme, 
+      useInheritedMediaQuery: true, 
+      locale: DevicePreview.locale(context), 
+      builder: DevicePreview.appBuilder, 
       home: const AppShell(),
     );
   }

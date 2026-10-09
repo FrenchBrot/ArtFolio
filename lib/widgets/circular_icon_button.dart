@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
 
-/// Circular icon button used for save / share / more / back / close.
-///
-/// Params (design system v2): icon, onPressed, size.
+
 class CircularIconButton extends StatelessWidget {
   const CircularIconButton({
     super.key,

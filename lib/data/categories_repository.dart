@@ -2,8 +2,6 @@
 import '../main.dart' show supabase;
 import '../models/category.dart';
 
-/// Fetches every row of `categories`, ordered by name. Shared by Home's
-/// and Search's filter-chip rows so both query it the same way.
 Future<List<Category>> fetchCategories() async {
   final rows = await supabase
       .from('categories')

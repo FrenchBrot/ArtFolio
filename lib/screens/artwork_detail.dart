@@ -7,12 +7,7 @@ import '../theme/app_spacing.dart';
 import '../theme/app_theme.dart';
 import '../widgets/tag_chip.dart';
 
-/// Artwork Detail: full-size image, title, description, and category.
-///
-/// Takes the [Pin] already fetched by whichever grid pushed this screen
-/// (fetchArtworks now selects description and the related category name
-/// alongside everything else), so opening a piece needs no extra
-/// Supabase round trip — and no loading state, for the same reason.
+
 class ArtworkDetailScreen extends StatelessWidget {
   const ArtworkDetailScreen({super.key, required this.pin});
 
@@ -30,9 +25,6 @@ class ArtworkDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Same tag as the Hero wrapping the thumbnail in PinCard
-            // (the image URL itself), so this animates in from wherever
-            // it was tapped instead of just appearing.
             Hero(
               tag: pin.imageUrl,
               child: CachedNetworkImage(

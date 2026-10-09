@@ -3,9 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
 
-/// Bold section title with an optional trailing action link (e.g. "See all").
-///
-/// Params (design system v2): title, actionLabel, onActionTap.
 class SectionHeader extends StatelessWidget {
   const SectionHeader({
     super.key,

@@ -1,16 +1,8 @@
 // lib/widgets/bottom_navigation_bar.dart
-//
-// NOTE: the design system v2 doc names this file
-// lib/widgets/app_bottom_nav_bar.dart. Built here as
-// bottom_navigation_bar.dart per request — rename one side to match
-// before grading.
+
 import 'package:flutter/material.dart';
 
-/// Home / Search / Create / Notifications / Profile tab bar. Wraps the
-/// built-in BottomNavigationBar + BottomNavigationBarItems, styled from
-/// [BottomNavigationBarThemeData] in lib/theme/app_theme.dart.
-///
-/// Params (design system v2): currentIndex, onTap.
+
 class AppBottomNavBar extends StatelessWidget {
   const AppBottomNavBar({
     super.key,

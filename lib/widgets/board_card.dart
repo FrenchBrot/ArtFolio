@@ -5,9 +5,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_spacing.dart';
 import '../theme/app_theme.dart';
 
-/// Card for a saved board: cover image, title, pin count.
-///
-/// Params (design system v2): coverImageUrl, title, pinCount, onTap.
+
 class BoardCard extends StatelessWidget {
   const BoardCard({
     super.key,

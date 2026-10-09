@@ -18,13 +18,7 @@ import '../widgets/secondary_button.dart';
 import '../widgets/section_header.dart';
 import 'artwork_detail.dart';
 
-/// Profile: avatar, bio, contact links from `artist_profile`, and a grid
-/// of everything in `artworks`. Reached by tapping the avatar in
-/// [TopNavigationBar] on Home.
-///
-/// `artist_profile` has no `boards` table behind it (ArtFolio never set
-/// one up — see the Supabase walkthrough), so this screen does not use
-/// [BoardCard]. It stands in for that with a flat artwork grid instead.
+
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
 
@@ -186,8 +180,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
       );
     }
 
-    // Generic Material icons stand in for the real brand marks — add
-    // font_awesome_flutter later for authentic Instagram/Ko-fi/Cara logos.
     addButton(_instagram, Icons.camera_alt_outlined);
     addButton(_kofi, Icons.coffee_outlined);
     addButton(_cara, Icons.palette_outlined);

@@ -3,13 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
 
-/// Placeholder block shown while real content (an image, a line of text)
-/// is still loading. Pulses gently so a screen full of these doesn't read
-/// as frozen — the animation is a self-contained visual effect, not state
-/// passed in from a parent, so it doesn't break the "data and callbacks
-/// only" rule from the design system doc.
-///
-/// Params (design system v2): width, height, borderRadius.
 class LoadingSkeleton extends StatefulWidget {
   const LoadingSkeleton({
     super.key,

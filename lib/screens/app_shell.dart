@@ -6,21 +6,7 @@ import 'home.dart';
 import 'profile.dart';
 import 'search.dart';
 
-/// Ties Home, Search, and Profile together behind [AppBottomNavBar].
-///
-/// AppBottomNavBar has five tabs — Home / Search / Create / Notifications
-/// / Profile — because that's the full set in the design system v2 doc,
-/// but ArtFolio only has screens for three of them. Create and
-/// Notifications aren't really part of a single-admin portfolio (artwork
-/// is added through the Supabase dashboard, not an in-app composer, and
-/// there's no one else to notify you about). Tapping either shows a
-/// short explanation instead of switching to a blank screen — remove
-/// those two cases in [_onTap] if you build real screens for them later.
-///
-/// Each tab keeps a full Scaffold of its own (with its own AppBar), since
-/// Home, Search, and Profile each need a different app bar. This
-/// Scaffold only supplies the bottom nav bar and the IndexedStack that
-/// swaps between them, so it has no AppBar of its own.
+
 class AppShell extends StatefulWidget {
   const AppShell({super.key});
 
@@ -56,10 +42,6 @@ class _AppShellState extends State<AppShell> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // IndexedStack mounts all five children up front and keeps them
-      // alive offstage, so switching tabs preserves each screen's scroll
-      // position and already-fetched data instead of rebuilding from
-      // scratch every time.
       body: IndexedStack(
         index: _currentIndex,
         children: [
@@ -68,8 +50,8 @@ class _AppShellState extends State<AppShell> {
             onProfileTap: () => _onTap(_profileIndex),
           ),
           const SearchScreen(),
-          const SizedBox.shrink(), // Create — never actually shown
-          const SizedBox.shrink(), // Notifications — never actually shown
+          const SizedBox.shrink(), 
+          const SizedBox.shrink(), 
           const ProfileScreen(),
         ],
       ),

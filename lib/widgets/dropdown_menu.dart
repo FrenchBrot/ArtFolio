@@ -1,16 +1,10 @@
 // lib/widgets/dropdown_menu.dart
-//
-// NOTE: the design system v2 doc names this file
-// lib/widgets/app_dropdown_menu.dart. Built here as dropdown_menu.dart
-// per request — rename one side to match before grading.
+
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
 
-/// Floating list of actions (Edit, Save, Delete, Share, etc.), opened
-/// from a trailing "more" icon.
-///
-/// Params (design system v2): options, onSelected.
+
 class AppDropdownMenu extends StatelessWidget {
   const AppDropdownMenu({
     super.key,

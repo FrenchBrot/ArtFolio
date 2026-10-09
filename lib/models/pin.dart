@@ -1,9 +1,5 @@
 // lib/models/pin.dart
 
-/// One item shown in the grid, and the artwork shown on
-/// ArtworkDetailScreen once tapped. Rename to `Artwork` later if you
-/// prefer; just keep the field names in sync with PinCard and
-/// ArtworkDetailScreen.
 class Pin {
   const Pin({
     required this.id,
@@ -20,12 +16,10 @@ class Pin {
   final String title;
   final String creatorName;
 
-  /// The artworks.description column — nullable since the table allows
-  /// it to be blank.
+
   final String? description;
 
-  /// The name of the related categories row (joined via tag_id), null
-  /// if the artwork has no category set.
+
   final String? categoryName;
 
   final bool isSaved;

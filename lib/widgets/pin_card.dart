@@ -5,10 +5,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_spacing.dart';
 import '../theme/app_theme.dart';
 
-/// One tile in [PinMasonryGrid]: image, bookmark button, title, creator.
-///
-/// Params (design system v2): imageUrl, title, creatorName, isSaved,
-/// onTap, onSaveTap.
+
 class PinCard extends StatelessWidget {
   const PinCard({
     super.key,
@@ -33,7 +30,7 @@ class PinCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(16), // matches the 12–20px card radius
+        borderRadius: BorderRadius.circular(16), 
         child: Container(
           color: AppColors.surface,
           child: Column(
@@ -42,15 +39,9 @@ class PinCard extends StatelessWidget {
             children: [
               Stack(
                 children: [
-                  // Hero tag is the image URL itself (unique per artwork)
-                  // rather than a new id param, so this stays compatible
-                  // with PinCard's documented parameter list. Matches the
-                  // Hero(tag: pin.imageUrl, ...) in ArtworkDetailScreen.
+
                   Hero(
                     tag: imageUrl,
-                    // width: double.infinity so the tile fills its grid
-                    // column instead of collapsing to the image's natural
-                    // size while it loads.
                     child: CachedNetworkImage(
                       imageUrl: imageUrl,
                       width: double.infinity,

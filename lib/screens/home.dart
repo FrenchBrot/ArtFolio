@@ -16,19 +16,14 @@ import 'artwork_detail.dart';
 import 'profile.dart';
 import 'search.dart';
 
-/// Home Feed: category chips + the staggered artwork grid, reading from
-/// the `artworks` and `categories` tables set up during the Supabase
-/// walkthrough.
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key, this.onSearchTap, this.onProfileTap});
 
-  /// Called when the search pill is tapped. Defaults to pushing
-  /// [SearchScreen] as a new route. [AppShell] overrides this to switch
-  /// tabs instead, so Search stays a single persistent screen rather than
-  /// also being reachable as a second, independently-stateful route.
+
   final VoidCallback? onSearchTap;
 
-  /// Same idea as [onSearchTap], for the avatar / [ProfileScreen].
+
   final VoidCallback? onProfileTap;
 
   @override

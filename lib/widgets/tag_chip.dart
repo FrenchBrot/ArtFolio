@@ -1,10 +1,7 @@
 // lib/widgets/tag_chip.dart
 import 'package:flutter/material.dart';
 
-/// Selectable pill chip for tags/categories. Styling comes from
-/// [ChipThemeData] in lib/theme/app_theme.dart.
-///
-/// Params (design system v2): label, selected, onTap.
+
 class TagChip extends StatelessWidget {
   const TagChip({
     super.key,

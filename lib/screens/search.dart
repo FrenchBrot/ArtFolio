@@ -16,9 +16,7 @@ import '../widgets/pin_masonry_grid.dart';
 import '../widgets/tag_chip.dart';
 import 'artwork_detail.dart';
 
-/// Search Results: a live search field, category chips, and the
-/// staggered grid of matches. Reached by tapping the search pill in
-/// [TopNavigationBar] on Home.
+
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
 
@@ -57,12 +55,11 @@ class _SearchScreenState extends State<SearchScreen> {
       setState(() => _categories = categories);
     } catch (error) {
       debugPrint('SearchScreen categories load error: $error');
-      // Non-fatal — the search box still works without the filter row.
     }
   }
 
   void _onQueryChanged(String _) {
-    setState(() {}); // refreshes the clear ("x") button's visibility
+    setState(() {}); 
     _debounce?.cancel();
     _debounce = Timer(const Duration(milliseconds: 350), _runSearch);
   }
