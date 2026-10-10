@@ -47,7 +47,7 @@
 - **Kept / changed / why:** I fixed the value in my `.env` myself. 
 - **Commit:** 46c8cc8de2bc81b26fb866f4fbad781a93bbb602
 
-### Entry 7: Profile content and contact links
+### Entry 6: Profile content and contact links
 
 - **Date / tool:** October 9 , Claude
 - **Asked for:** Show my bio and make the Instagram, Ko-fi, Cara and email icons open the app or the browser.
